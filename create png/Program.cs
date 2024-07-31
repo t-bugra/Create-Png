@@ -18,7 +18,7 @@ namespace create_png
             Bitmap bitmap = new Bitmap(width, height);
 
             IScale Scale;
-
+            //Test
             Console.WriteLine("RGB Scale için 1, Black Scale için 2, Grey Scale için 3'e basınız:");
             string button_clik = Console.ReadLine();
 
