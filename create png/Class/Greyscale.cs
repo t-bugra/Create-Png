@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace create_png.Class
 {
-    internal class Greyscale : IScale
+    public class Greyscale : IScale
     {
         public void Render(Bitmap bmp)
         {
