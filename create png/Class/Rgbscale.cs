@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace create_png.Class
 {
-    internal class Rgbscale : IScale
+    public class Rgbscale : IScale
     {
         private Random random=new Random(); 
         public void Render(Bitmap bmp)

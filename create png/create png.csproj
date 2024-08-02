@@ -54,7 +54,9 @@
   <ItemGroup>
     <Compile Include="Class\Blackscale.cs" />
     <Compile Include="Class\Greyscale.cs" />
+    <Compile Include="Class\Randomblackscale.cs" />
     <Compile Include="Class\Rgbscale.cs" />
+    <Compile Include="Class\Rgb_deneme.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

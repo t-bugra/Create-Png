@@ -18,7 +18,6 @@ namespace create_png.Class
             {
                 for (int x = 0; x < width; x++)
                 {
-
                     // height ten çıkarınca siyah üstte oluyo 
                     int grayValue = height-(255 - y);
                     // gri değeri 0,255 arasına eşitleme
@@ -26,8 +25,6 @@ namespace create_png.Class
 
                     Color grayColor = Color.FromArgb(grayValue, grayValue, grayValue);
                     bmp.SetPixel(x, y, grayColor);
-
-
                 }
             }
             

@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace create_png.Class
 {
-    public class Blackscale : IScale
+    public class Randomblackscale : IScale
     {
+        private Random random=new Random();
         public void Render(Bitmap bmp)
         {
             int width = bmp.Width;
@@ -18,11 +19,14 @@ namespace create_png.Class
             {
                 for (int x = 0; x < width; x++)
                 {
-                    int BlackValue = x % 2 == 0 ? 0 : 255;
-                    Color BlackColor = Color.FromArgb(BlackValue, BlackValue, BlackValue);
-                    bmp.SetPixel(x, y, BlackColor);
+                    Color color = random.Next(2) == 0 ? 
+                    Color.FromArgb(0, 0, 0) : Color.FromArgb(255, 255, 255);
+                    bmp.SetPixel(x, y, color);
                 }
+
             }
+
+                Console.ReadLine();
             
         }
     }

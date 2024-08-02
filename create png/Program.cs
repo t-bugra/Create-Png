@@ -18,8 +18,11 @@ namespace create_png
             Bitmap bitmap = new Bitmap(width, height);
 
             IScale Scale;
-            //Test
-            Console.WriteLine("RGB Scale için 1, Black Scale için 2, Grey Scale için 3'e basınız:");
+            Console.WriteLine("RGB Scale için 1");
+            Console.WriteLine("Black Scale için 2");
+            Console.WriteLine("Grey Scale için 3");
+            Console.WriteLine("Random RGB Scale için 4");
+            Console.WriteLine("Random Black scale için 5'i Tuşlayınız");
             string button_clik = Console.ReadLine();
 
             switch (button_clik)
@@ -33,14 +36,21 @@ namespace create_png
                 case "3":
                     Scale = new Greyscale();
                     break;
+                    case "4":
+                        Scale = new Rgb_deneme();
+                    break;
+                    case "5":
+                        Scale = new Randomblackscale();
+                    break;
                 default:
                     Console.WriteLine("Lütfen Geçerli Bir Sayı Giriniz.");
+                    Console.ReadLine();
                     return;
             }
 
             Scale.Render(bitmap);
 
-            bitmap.Save(@"C:\Users\tbugr\OneDrive\Masaüstü\imagem.png"); // Bitmap'i kaydetme
+            bitmap.Save(@"C:\Users\tbugr\OneDrive\Masaüstü\imagescale.png"); // Bitmap'i kaydetme
 
         }
     }
