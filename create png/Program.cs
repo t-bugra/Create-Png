@@ -18,10 +18,10 @@ namespace create_png
             Bitmap bitmap = new Bitmap(width, height);
 
             IScale Scale;
-            Console.WriteLine("RGB Scale için 1");
+            Console.WriteLine("Random RGB Scale için 1");
             Console.WriteLine("Black Scale için 2");
             Console.WriteLine("Grey Scale için 3");
-            Console.WriteLine("Random RGB Scale için 4");
+            Console.WriteLine("RGB Scale için 4");
             Console.WriteLine("Random Black scale için 5'i Tuşlayınız");
             string button_clik = Console.ReadLine();
 
